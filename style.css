@@ -19,6 +19,9 @@ body {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
@@ -44,4 +47,63 @@ body {
 
 .login-laguage {
   display: flex;
+}
+
+.todo-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list-box {
+  width: 90%;
+  height: 90%;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-list-box input {
+  width: 90%;
+  margin: 10px 0px;
+  text-align: left;
+}
+
+.todo-list-title {
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.form {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form .submit {
+  margin-left: 30px;
+  width: 120px;
+  background: #3498db;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+.submit:active {
+  background: magenta;
 }
