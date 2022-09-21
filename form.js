@@ -13,7 +13,7 @@ formSubmit.addEventListener("submit", (e) => {
     tarea.id = lista.length;
     tarea.text = text;
     console.log(tarea);
-    lista.push(text);
+    lista.push(tarea);
     console.log(lista);
   }
 });
