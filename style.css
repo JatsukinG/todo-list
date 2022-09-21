@@ -21,7 +21,6 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .header {
@@ -55,6 +54,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .todo-list-box {
@@ -64,6 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .todo-list-box input {
@@ -75,6 +76,7 @@ body {
 .todo-list-title {
   width: 100%;
   height: 40px;
+  min-height: 40px;
   background: rgba(255, 255, 255, 0.3);
   color: white;
   display: flex;
@@ -106,6 +108,23 @@ body {
 
 .submit:active {
   background: magenta;
+}
+
+.tareas-box {
+  width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.tareaBox {
+  width: 95%;
+  margin: 10px 0px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 600px) {
