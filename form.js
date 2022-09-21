@@ -5,7 +5,8 @@ const tareasBox = document.querySelector(".tareas-box");
 
 formSubmit.addEventListener("submit", (e) => {
   e.preventDefault();
-  let text = document.querySelector("#text").value;
+  let textInput = document.querySelector("#text");
+  let text = textInput.value;
 
   if (!text) {
     alert("Por favor ingrese un texto");
@@ -19,4 +20,6 @@ formSubmit.addEventListener("submit", (e) => {
     tareaBox.classList.add("tareaBox");
     tareasBox.append(tareaBox);
   }
+
+  textInput.value = "";
 });
