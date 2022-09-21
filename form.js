@@ -1,6 +1,7 @@
 let lista = [];
 
 const formSubmit = document.querySelector(".form");
+const tareasBox = document.querySelector(".tareas-box");
 
 formSubmit.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -12,8 +13,10 @@ formSubmit.addEventListener("submit", (e) => {
     let tarea = new Object();
     tarea.id = lista.length;
     tarea.text = text;
-    console.log(tarea);
-    lista.push(tarea);
-    console.log(lista);
+
+    let tareaBox = document.createElement("label");
+    tareaBox.innerHTML = tarea.text;
+    tareaBox.classList.add("tareaBox");
+    tareasBox.append(tareaBox);
   }
 });
